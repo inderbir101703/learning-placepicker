@@ -1,0 +1,7 @@
+geolocation is asynchronous 
+localStorage is synchronpus as it dont need any callbackor promise so no need to use useeffect fpr this
+using funciton (which in the end are object )/objects in useEffect can cause infinite loop as everytime app is executed these variables and functions are recreated and as we know functions having same code ... may not be equal
+ useCallback help in this case .... takes a function and store in memory ... take depency array mostly props and state as these two only changes in  a component
+ always add onClose in modal as ..when uses close the dialog with esc the state remains same .. so update the statye onclose of dialog as well
+ haverine formula to calculate to dustance between latitude and longitudes
+ to access modal dom element via ref ...connection has to be betwenn ref and html dom so write that code in useEffect
